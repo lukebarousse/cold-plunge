@@ -124,6 +124,10 @@
   .pdiag .sub { fill: #94a3b8; font: 10.5px sans-serif; text-anchor: middle; }
   .pdiag .pipe { stroke: #38bdf8; stroke-width: 2; fill: none; marker-end: url(#arrow); }
   .pdiag .pipe.opt { stroke: #fbbf24; stroke-dasharray: 5 4; }
+  .pdiag a { cursor: pointer; }
+  .pdiag a:hover .box { fill: #1e3a55; stroke: #bae6fd; }
+  .pdiag a:hover .lbl { fill: #bae6fd; }
+  .diag-hint { font-size: 0.78rem; color: var(--muted); margin-top: 0.5rem; }
   .pdiag-title { font-size: 0.85rem; color: var(--muted); margin: 0.9rem 0 0; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; }
 
   .section-desc { color: var(--muted); margin-top: 0.35rem; max-width: 760px; }
@@ -450,26 +454,42 @@
       every thread.</p>
       <div class="pdiag">
       <svg viewBox="0 0 1050 100" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Suction side parts order">
-        <rect class="box" x="10" y="20" width="110" height="60" rx="8"/>
-        <text class="lbl" x="65" y="45">Tub drain</text>
-        <text class="sub" x="65" y="62">bulkhead</text>
-        <rect class="box" x="141" y="20" width="110" height="60" rx="8"/>
-        <text class="lbl" x="196" y="45">Short nipple</text>
-        <text class="sub" x="196" y="62">Banjo NIP075-SH</text>
-        <rect class="box" x="272" y="20" width="110" height="60" rx="8"/>
-        <text class="lbl" x="327" y="45">90° elbow</text>
-        <text class="sub" x="327" y="62">Banjo poly</text>
-        <rect class="box" x="403" y="20" width="110" height="60" rx="8"/>
-        <text class="lbl" x="458" y="45">Ball valve 1</text>
-        <rect class="box" x="534" y="20" width="110" height="60" rx="8"/>
-        <text class="lbl" x="589" y="45">Mesh strainer</text>
-        <rect class="box" x="665" y="20" width="110" height="60" rx="8"/>
-        <text class="lbl" x="720" y="45">Ball valve 2</text>
-        <rect class="box" x="796" y="20" width="110" height="60" rx="8"/>
-        <text class="lbl" x="851" y="45">Barbed × NPT</text>
-        <text class="sub" x="851" y="62">female, Spears 1435</text>
-        <rect class="box" x="927" y="20" width="110" height="60" rx="8"/>
-        <text class="lbl" x="982" y="45">Pump intake</text>
+        <a href="https://icebarrel.com/products/ice-barrel-500" target="_blank" rel="nofollow">
+          <rect class="box" x="10" y="20" width="110" height="60" rx="8"/>
+          <text class="lbl" x="65" y="45">Tub drain</text>
+          <text class="sub" x="65" y="62">bulkhead</text>
+        </a>
+        <a href="https://amzn.to/4xgfTVX" target="_blank" rel="nofollow sponsored">
+          <rect class="box" x="141" y="20" width="110" height="60" rx="8"/>
+          <text class="lbl" x="196" y="45">Short nipple</text>
+          <text class="sub" x="196" y="62">Banjo NIP075-SH</text>
+        </a>
+        <a href="https://amzn.to/456p2ok" target="_blank" rel="nofollow sponsored">
+          <rect class="box" x="272" y="20" width="110" height="60" rx="8"/>
+          <text class="lbl" x="327" y="45">90° elbow</text>
+          <text class="sub" x="327" y="62">Banjo poly</text>
+        </a>
+        <a href="https://amzn.to/3UdnxlH" target="_blank" rel="nofollow sponsored">
+          <rect class="box" x="403" y="20" width="110" height="60" rx="8"/>
+          <text class="lbl" x="458" y="45">Ball valve 1</text>
+        </a>
+        <a href="https://amzn.to/3UclA98" target="_blank" rel="nofollow sponsored">
+          <rect class="box" x="534" y="20" width="110" height="60" rx="8"/>
+          <text class="lbl" x="589" y="45">Mesh strainer</text>
+        </a>
+        <a href="https://amzn.to/3UdnxlH" target="_blank" rel="nofollow sponsored">
+          <rect class="box" x="665" y="20" width="110" height="60" rx="8"/>
+          <text class="lbl" x="720" y="45">Ball valve 2</text>
+        </a>
+        <a href="https://www.amazon.com/dp/B009F3MSXU" target="_blank" rel="nofollow">
+          <rect class="box" x="796" y="20" width="110" height="60" rx="8"/>
+          <text class="lbl" x="851" y="45">Barbed × NPT</text>
+          <text class="sub" x="851" y="62">female, Spears 1435</text>
+        </a>
+        <a href="https://amzn.to/4z3dgJ2" target="_blank" rel="nofollow sponsored">
+          <rect class="box" x="927" y="20" width="110" height="60" rx="8"/>
+          <text class="lbl" x="982" y="45">Pump intake</text>
+        </a>
         <line class="pipe" x1="120" y1="50" x2="137" y2="50"/>
         <line class="pipe" x1="251" y1="50" x2="268" y2="50"/>
         <line class="pipe" x1="382" y1="50" x2="399" y2="50"/>
@@ -478,6 +498,7 @@
         <line class="pipe" x1="775" y1="50" x2="792" y2="50"/>
         <line class="pipe" x1="906" y1="50" x2="923" y2="50"/>
       </svg>
+      <p class="diag-hint">💡 Click any part in the diagram to view the product.</p>
       </div>
       <img src="assets/img/outlet_pump.jpg" alt="Pump, strainer, and ball valve plumbing at tub drain" loading="lazy">
     </li>
@@ -488,28 +509,48 @@
       This is your drain setup for water changes: close that valve, open the spigot, and the pump
       pushes the old water out the spigot instead of through the chiller. Tub empties itself.</p>
       <div class="pdiag">
-      <svg viewBox="0 0 870 170" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Discharge side parts order">
-        <rect class="box" x="10" y="20" width="140" height="60" rx="8"/>
-        <text class="lbl" x="80" y="45">Pump discharge</text>
-        <rect class="box" x="186" y="20" width="140" height="60" rx="8"/>
-        <text class="lbl" x="256" y="45">Barbed × NPT</text>
-        <text class="sub" x="256" y="62">female, Spears 1435</text>
-        <rect class="box" x="362" y="20" width="140" height="60" rx="8"/>
-        <text class="lbl" x="432" y="45">Banjo tee</text>
-        <text class="sub" x="432" y="62">spigot on branch</text>
-        <rect class="box" x="538" y="20" width="140" height="60" rx="8"/>
-        <text class="lbl" x="608" y="45">Ball valve 3</text>
-        <text class="sub" x="608" y="62">close to drain tub</text>
-        <rect class="box" x="714" y="20" width="140" height="60" rx="8"/>
-        <text class="lbl" x="784" y="45">Chiller inlet</text>
-        <rect class="box" x="362" y="120" width="140" height="42" rx="8"/>
-        <text class="lbl" x="432" y="146">Drain spigot</text>
-        <line class="pipe" x1="150" y1="50" x2="182" y2="50"/>
-        <line class="pipe" x1="326" y1="50" x2="358" y2="50"/>
-        <line class="pipe" x1="502" y1="50" x2="534" y2="50"/>
-        <line class="pipe" x1="678" y1="50" x2="710" y2="50"/>
-        <line class="pipe" x1="432" y1="80" x2="432" y2="116"/>
+      <svg viewBox="0 0 940 170" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Discharge side parts order">
+        <a href="https://amzn.to/4z3dgJ2" target="_blank" rel="nofollow sponsored">
+          <rect class="box" x="10" y="20" width="130" height="60" rx="8"/>
+          <text class="lbl" x="75" y="45">Pump</text>
+          <text class="sub" x="75" y="62">discharge</text>
+        </a>
+        <a href="https://amzn.to/4hfoyn8" target="_blank" rel="nofollow sponsored">
+          <rect class="box" x="168" y="20" width="130" height="60" rx="8"/>
+          <text class="lbl" x="233" y="45">Banjo tee</text>
+          <text class="sub" x="233" y="62">spigot on branch</text>
+        </a>
+        <a href="https://amzn.to/3UdnxlH" target="_blank" rel="nofollow sponsored">
+          <rect class="box" x="326" y="20" width="130" height="60" rx="8"/>
+          <text class="lbl" x="391" y="45">Ball valve 3</text>
+          <text class="sub" x="391" y="62">close to drain tub</text>
+        </a>
+        <a href="https://www.amazon.com/dp/B009F3MSXU" target="_blank" rel="nofollow">
+          <rect class="box" x="484" y="20" width="130" height="60" rx="8"/>
+          <text class="lbl" x="549" y="45">Barbed × NPT</text>
+          <text class="sub" x="549" y="62">female, Spears 1435</text>
+        </a>
+        <a href="https://amzn.to/3RwAnLf" target="_blank" rel="nofollow sponsored">
+          <rect class="box" x="642" y="20" width="130" height="60" rx="8"/>
+          <text class="lbl" x="707" y="45">Poly pipe</text>
+          <text class="sub" x="707" y="62">+ hose clamps</text>
+        </a>
+        <a href="https://amzn.to/4br3WED" target="_blank" rel="nofollow sponsored">
+          <rect class="box" x="800" y="20" width="130" height="60" rx="8"/>
+          <text class="lbl" x="865" y="45">Chiller inlet</text>
+        </a>
+        <a href="https://icebarrel.com/products/ice-barrel-500" target="_blank" rel="nofollow">
+          <rect class="box" x="168" y="120" width="130" height="42" rx="8"/>
+          <text class="lbl" x="233" y="146">Drain spigot</text>
+        </a>
+        <line class="pipe" x1="140" y1="50" x2="164" y2="50"/>
+        <line class="pipe" x1="298" y1="50" x2="322" y2="50"/>
+        <line class="pipe" x1="456" y1="50" x2="480" y2="50"/>
+        <line class="pipe" x1="614" y1="50" x2="638" y2="50"/>
+        <line class="pipe" x1="772" y1="50" x2="796" y2="50"/>
+        <line class="pipe" x1="233" y1="80" x2="233" y2="116"/>
       </svg>
+      <p class="diag-hint">💡 Click any part in the diagram to view the product.</p>
       </div>
     </li>
     <li>
@@ -520,57 +561,86 @@
       <p class="pdiag-title">Without venturi (simplest)</p>
       <div class="pdiag">
       <svg viewBox="0 0 790 100" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Return line parts order without venturi">
-        <rect class="box" x="10" y="20" width="130" height="60" rx="8"/>
-        <text class="lbl" x="75" y="45">Chiller outlet</text>
-        <rect class="box" x="172" y="20" width="130" height="60" rx="8"/>
-        <text class="lbl" x="237" y="45">Poly pipe</text>
-        <text class="sub" x="237" y="62">+ hose clamps</text>
-        <rect class="box" x="334" y="20" width="130" height="60" rx="8"/>
-        <text class="lbl" x="399" y="45">Barbed × NPT</text>
-        <text class="sub" x="399" y="62">male adapter</text>
-        <rect class="box" x="496" y="20" width="130" height="60" rx="8"/>
-        <text class="lbl" x="561" y="45">90° street elbow</text>
-        <text class="sub" x="561" y="62">Banjo</text>
-        <rect class="box" x="658" y="20" width="122" height="60" rx="8"/>
-        <text class="lbl" x="719" y="40">Short nipple</text>
-        <text class="sub" x="719" y="56">→ tub inlet</text>
-        <text class="sub" x="719" y="70">bulkhead</text>
+        <a href="https://amzn.to/4br3WED" target="_blank" rel="nofollow sponsored">
+          <rect class="box" x="10" y="20" width="130" height="60" rx="8"/>
+          <text class="lbl" x="75" y="45">Chiller outlet</text>
+        </a>
+        <a href="https://amzn.to/3RwAnLf" target="_blank" rel="nofollow sponsored">
+          <rect class="box" x="172" y="20" width="130" height="60" rx="8"/>
+          <text class="lbl" x="237" y="45">Poly pipe</text>
+          <text class="sub" x="237" y="62">+ hose clamps</text>
+        </a>
+        <a href="https://amzn.to/4wrWfpv" target="_blank" rel="nofollow sponsored">
+          <rect class="box" x="334" y="20" width="130" height="60" rx="8"/>
+          <text class="lbl" x="399" y="45">Barbed × NPT</text>
+          <text class="sub" x="399" y="62">male adapter</text>
+        </a>
+        <a href="https://amzn.to/4xmSMcx" target="_blank" rel="nofollow sponsored">
+          <rect class="box" x="496" y="20" width="130" height="60" rx="8"/>
+          <text class="lbl" x="561" y="45">90° street elbow</text>
+          <text class="sub" x="561" y="62">Banjo</text>
+        </a>
+        <a href="https://amzn.to/4xgfTVX" target="_blank" rel="nofollow sponsored">
+          <rect class="box" x="658" y="20" width="122" height="60" rx="8"/>
+          <text class="lbl" x="719" y="40">Short nipple</text>
+          <text class="sub" x="719" y="56">→ tub inlet</text>
+          <text class="sub" x="719" y="70">bulkhead</text>
+        </a>
         <line class="pipe" x1="140" y1="50" x2="168" y2="50"/>
         <line class="pipe" x1="302" y1="50" x2="330" y2="50"/>
         <line class="pipe" x1="464" y1="50" x2="492" y2="50"/>
         <line class="pipe" x1="626" y1="50" x2="654" y2="50"/>
       </svg>
+      <p class="diag-hint">💡 Click any part in the diagram to view the product.</p>
       </div>
       <p class="pdiag-title">With venturi (for ozone)</p>
       <div class="pdiag">
       <svg viewBox="0 0 1000 155" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Return line parts order with venturi">
-        <rect class="box" x="10" y="75" width="108" height="60" rx="8"/>
-        <text class="lbl" x="64" y="100">Chiller</text>
-        <text class="sub" x="64" y="117">outlet</text>
-        <rect class="box" x="138" y="75" width="108" height="60" rx="8"/>
-        <text class="lbl" x="192" y="100">Poly pipe</text>
-        <text class="sub" x="192" y="117">+ clamps</text>
-        <rect class="box" x="266" y="75" width="108" height="60" rx="8"/>
-        <text class="lbl" x="320" y="100">Barbed ×</text>
-        <text class="sub" x="320" y="117">NPT female</text>
-        <rect class="box" x="394" y="75" width="108" height="60" rx="8"/>
-        <text class="lbl" x="448" y="100">Brass ¾"→1"</text>
-        <text class="sub" x="448" y="117">adapter</text>
-        <rect class="box opt" x="522" y="75" width="108" height="60" rx="8"/>
-        <text class="lbl" x="576" y="100">1" venturi</text>
-        <text class="sub" x="576" y="117">ozone in ↑</text>
-        <rect class="box opt" x="522" y="8" width="108" height="42" rx="8"/>
-        <text class="lbl" x="576" y="33">Ozone gen.</text>
-        <rect class="box" x="650" y="75" width="108" height="60" rx="8"/>
-        <text class="lbl" x="704" y="100">Brass ¾"→1"</text>
-        <text class="sub" x="704" y="117">adapter</text>
-        <rect class="box" x="778" y="75" width="108" height="60" rx="8"/>
-        <text class="lbl" x="832" y="100">Barbed ×</text>
-        <text class="sub" x="832" y="117">NPT female</text>
-        <rect class="box" x="906" y="75" width="84" height="60" rx="8"/>
-        <text class="lbl" x="948" y="96">Short</text>
-        <text class="lbl" x="948" y="111">nipple</text>
-        <text class="sub" x="948" y="127">→ tub inlet</text>
+        <a href="https://amzn.to/4br3WED" target="_blank" rel="nofollow sponsored">
+          <rect class="box" x="10" y="75" width="108" height="60" rx="8"/>
+          <text class="lbl" x="64" y="100">Chiller</text>
+          <text class="sub" x="64" y="117">outlet</text>
+        </a>
+        <a href="https://amzn.to/3RwAnLf" target="_blank" rel="nofollow sponsored">
+          <rect class="box" x="138" y="75" width="108" height="60" rx="8"/>
+          <text class="lbl" x="192" y="100">Poly pipe</text>
+          <text class="sub" x="192" y="117">+ clamps</text>
+        </a>
+        <a href="https://www.amazon.com/dp/B009F3MSXU" target="_blank" rel="nofollow">
+          <rect class="box" x="266" y="75" width="108" height="60" rx="8"/>
+          <text class="lbl" x="320" y="100">Barbed ×</text>
+          <text class="sub" x="320" y="117">NPT female</text>
+        </a>
+        <a href="https://www.amazon.com/dp/B0BMW4P87R" target="_blank" rel="nofollow">
+          <rect class="box" x="394" y="75" width="108" height="60" rx="8"/>
+          <text class="lbl" x="448" y="100">Brass ¾"→1"</text>
+          <text class="sub" x="448" y="117">adapter</text>
+        </a>
+        <a href="https://amzn.to/3RwAKW9" target="_blank" rel="nofollow sponsored">
+          <rect class="box opt" x="522" y="75" width="108" height="60" rx="8"/>
+          <text class="lbl" x="576" y="100">1" venturi</text>
+          <text class="sub" x="576" y="117">ozone in ↑</text>
+        </a>
+        <a href="https://amzn.to/4xgg4k5" target="_blank" rel="nofollow sponsored">
+          <rect class="box opt" x="522" y="8" width="108" height="42" rx="8"/>
+          <text class="lbl" x="576" y="33">Ozone gen.</text>
+        </a>
+        <a href="https://www.amazon.com/dp/B0BMW4P87R" target="_blank" rel="nofollow">
+          <rect class="box" x="650" y="75" width="108" height="60" rx="8"/>
+          <text class="lbl" x="704" y="100">Brass ¾"→1"</text>
+          <text class="sub" x="704" y="117">adapter</text>
+        </a>
+        <a href="https://www.amazon.com/dp/B009F3MSXU" target="_blank" rel="nofollow">
+          <rect class="box" x="778" y="75" width="108" height="60" rx="8"/>
+          <text class="lbl" x="832" y="100">Barbed ×</text>
+          <text class="sub" x="832" y="117">NPT female</text>
+        </a>
+        <a href="https://amzn.to/4xgfTVX" target="_blank" rel="nofollow sponsored">
+          <rect class="box" x="906" y="75" width="84" height="60" rx="8"/>
+          <text class="lbl" x="948" y="96">Short</text>
+          <text class="lbl" x="948" y="111">nipple</text>
+          <text class="sub" x="948" y="127">→ tub inlet</text>
+        </a>
         <line class="pipe" x1="118" y1="105" x2="134" y2="105"/>
         <line class="pipe" x1="246" y1="105" x2="262" y2="105"/>
         <line class="pipe" x1="374" y1="105" x2="390" y2="105"/>
@@ -580,6 +650,7 @@
         <line class="pipe" x1="758" y1="105" x2="774" y2="105"/>
         <line class="pipe" x1="886" y1="105" x2="902" y2="105"/>
       </svg>
+      <p class="diag-hint">💡 Click any part in the diagram to view the product.</p>
       </div>
       <img src="assets/img/inlet_venturi.jpg" alt="Return line into the tub with venturi inline" loading="lazy">
     </li>
